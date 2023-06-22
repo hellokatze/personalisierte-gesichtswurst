@@ -1,3 +1,5 @@
+Project status: Currently in development
+
 Unleash your creativity and capture the essence of individuality with Personalisierte Gesichtswurst.
 
 Whether you're looking to add some flavor to your social media profiles or surprise a friend for their birthday, Personalisierte Gesichtswurst is here to turn your face into savory works of art. Simply upload your photo and watch as Personalisierte Gesichtswurst magically transforms your face into a mouthwatering slice of salami.
