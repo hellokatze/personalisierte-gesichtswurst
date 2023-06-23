@@ -1,0 +1,19 @@
+<h1>Update your profile</h1>
+
+<%= simple_form_for @user do |f| %>
+  <%= f.input :username,
+              required: true,
+              input_html: { autocomplete: "Username", placeholder: "kath5000" } %>
+  <%= f.input :age,
+              required: true,
+              input_html: { autocomplete: "age", placeholder: "18" } %>
+  <%= f.input :city,
+              required: true,
+              input_html: { autocomplete: "Where are you from?", placeholder: "Berlin" } %>
+  <%= f.input :bio,
+              as: :text,
+              required: true,
+              input_html: { autocomplete: "Tell us about yourself", rows: 5, placeholder: "Tell us about yourself." } %>
+  <%= f.submit "Save" %>
+  <%= link_to "Cancel", user_path %>
+<% end %>
