@@ -7,4 +7,6 @@ Rails.application.routes.draw do
   # root "articles#index"
 
   resources :users, only: %i[edit show update destroy]
+
+  get "about", to: "pages#about"
 end
