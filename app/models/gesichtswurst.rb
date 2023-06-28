@@ -1,0 +1,2 @@
+class Gesichtswurst < ApplicationRecord
+end
