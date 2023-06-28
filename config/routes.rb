@@ -8,7 +8,7 @@ Rails.application.routes.draw do
 
   resources :users, only: %i[edit show update destroy]
 
-  resources :gesichtswursts, only: %i[index create show destroy]
+  resources :gesichtswursts, only: %i[index create show update destroy]
 
   get "about", to: "pages#about"
 end
