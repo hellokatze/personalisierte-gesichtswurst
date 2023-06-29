@@ -2,5 +2,17 @@
   <div class="home-header-text">
     <h1>Personalisierte Gesichtswurst</h1>
     <p>Slicing smiles, one salami face at a time! Coming soon.</p>
+
+    <div class="generator-form">
+      <%= simple_form_for(@gesichtswurst) do |f| %>
+          <%= f.input :photo,
+                      as: :file,
+                      input_html: { class: "generator-photo-input"} %>
+        <span class="generator-submit-button">
+          <%= f.submit "Wurstify yourself" %>
+        </span>
+      <% end %>
+    </div>
+
   </div>
 </div>
