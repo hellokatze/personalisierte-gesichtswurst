@@ -7,7 +7,8 @@
       <%= simple_form_for(@gesichtswurst) do |f| %>
           <%= f.input :photo,
                       as: :file,
-                      input_html: { class: "generator-photo-input"} %>
+                      input_html: { class: "generator-photo-input"},
+                      label: false %>
         <span class="generator-submit-button">
           <%= f.submit "Wurstify yourself" %>
         </span>
