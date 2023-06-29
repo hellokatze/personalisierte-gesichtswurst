@@ -3,4 +3,10 @@ class GesichtswurstsController < ApplicationController
 
   def index
   end
+
+  private
+
+  def gesichtswurst_params
+    params.require(:gesichtswurst).permit(:photo, :name, :city, :description, :public, :votes, :user)
+  end
 end
