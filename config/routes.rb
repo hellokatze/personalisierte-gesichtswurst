@@ -10,7 +10,7 @@ Rails.application.routes.draw do
     resources :comments, only: %i[new create edit update destroy]
   end
 
-  resources :gesichtswursts, only: %i[index create show update destroy]
+  resources :gesichtswursts, only: %i[new index create show update destroy]
 
   get "about", to: "pages#about"
 end
