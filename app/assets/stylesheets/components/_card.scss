@@ -25,3 +25,18 @@ section .gesichtswurst-card .gesichtswurst-card-image img {
   object-fit: cover;
   border-radius: 10px;
 }
+
+.gesichtswurst-card-content {
+  width: 20em;
+  display: flex;
+  justify-content: space-between;
+
+  .gesichtswurst-location {
+    display: flex;
+  }
+
+  .gesichtswurst-city {
+    margin-left: 5px;
+    margin-bottom: 5px;
+  }
+}
