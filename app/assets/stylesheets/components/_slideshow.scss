@@ -1,14 +1,14 @@
 .slideshow {
-  display: flex;
-  margin-top: 2em;
-  margin-bottom: 2em;
+  position: relative;
+  overflow: hidden;
+  padding: 2em;
 }
 
 .slideshow-cards-container {
   padding: 0 10vw;
   display: flex;
   overflow-x: auto;
-  scroll-behavior: auto;
+  scroll-behavior: smooth;
 }
 
 .slideshow-cards-container::-webkit-scrollbar {
@@ -18,7 +18,7 @@
 .pre-btn, .nxt-btn {
   border: none;
   background: none;
-  height: 41%;
+  height: 84%;
   display: flex;
   justify-content: space-between;
   position: absolute;
@@ -26,6 +26,7 @@
   align-items: center;
   font-size: 25px;
   opacity: 0.5;
+  padding: 4em;
 
   &:hover {
     opacity: 1.0;
@@ -39,4 +40,37 @@
 
 .nxt-btn {
   right: 0;
+}
+
+.collection-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+}
+
+.collection {
+  position: relative;
+}
+
+.collection img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.collection p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+  font-size: 50px;
+  text-transform: capitalize;
+}
+
+.collection:nth-child(3) {
+  grid-column: span 2;
+  margin-bottom: 10px;
 }
