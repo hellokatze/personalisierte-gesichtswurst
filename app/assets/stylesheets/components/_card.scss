@@ -1,6 +1,13 @@
-section .gesichtswurst-card .gesichtswurst-card-image {
+.gesichtswurst-card {
+  box-shadow: 2px 2px 8px rgb(126, 126, 126);
   height: 20em;
   width: 20em;
+  border-radius: 10px;
+}
+
+section .gesichtswurst-card .gesichtswurst-card-image {
+  height: 100%;
+  width: 100%;
   position: relative;
 }
 
